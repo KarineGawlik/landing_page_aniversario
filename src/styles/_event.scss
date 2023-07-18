@@ -1,0 +1,71 @@
+@use 'variables';
+
+.event {
+    padding: 50px 0;
+
+    &--local {
+        background-image: linear-gradient(variables.$backgroundColor1, variables.$backgroundColor2);
+    }
+
+    &--data {
+        background-image: linear-gradient(variables.$backgroundColor2, variables.$backgroundColor1);
+    }
+
+    &--horario {
+        background-image: linear-gradient(variables.$backgroundColor1, variables.$backgroundColor2);
+    }
+
+    &--final {
+        background-image: linear-gradient(variables.$backgroundColor2, variables.$backgroundColor1);
+    }
+
+    &__image {
+        height: 220px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .event__details__description {
+        margin-top: 24px;
+        font-size: 20px;
+    }
+
+    .event__details__title {
+        margin-top: 24px;
+        font-size: 34px;
+        letter-spacing: 1px;
+
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        .container {
+            display: block;
+        }
+        
+        &__image {
+            width: 80px;
+            height: 80px;
+            margin-top: 24px;
+        }
+
+        .event__details__description {
+            font-size: 20px;
+        }
+
+        .event__details__title {
+            font-size: 24px;
+        }
+    }
+
+}

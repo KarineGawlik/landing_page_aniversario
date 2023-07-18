@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body>
-    <img src="./imagens/feliz_aniversário.png" alt="Arte Aniversário">
-    <script src="./scripts/main.js"></script>
+
+    <header class="hero">
+        <div class="container">
+            <img class="hero__image" src="./imagens/bolo-de-aniversario.png" alt="EBAC">
+            <p class="hero__text">
+                Minha festa de aniversário começa em:
+            </p>
+            <span id="contador" class="hero__contagem"></span>
+        </div>
+    </header>
+
+    <section class="event event--local">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Local<br>Rua Bernardo Jacintho da Veiga, Novo Mundo, Curitiba-PR
+                </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore quisquam molestiae repudiandae quod? Fugit doloribus consectetur molestias qui quam, repellat dolor explicabo sunt accusamus, dolorem quo nesciunt impedit labore.
+                </p>
+            </div>
+            <img class="event__image" src="./imagens/endereco.png" alt="Front-End">
+        </div>
+    </section>
+
+    <section class="event event--data event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Data<br>Dia  18 / 08 / 2023</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut laudantium ipsam incidunt, repellendus, placeat similique impedit dolorum veritatis soluta natus minima dolorem explicabo consequuntur debitis? Ut porro mollitia alias nihil!
+                </p>
+            </div>
+            <img class="event__image" src="./imagens/date.png" alt="UI/UX">
+        </div>
+    </section>
+
+    <section class="event event--horario">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Horário<br>Te esperamos lá às 19horas!</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum quibusdam blanditiis, quo reprehenderit quae hic nisi enim fuga adipisci. Suscipit consequuntur aliquid laudantium expedita pariatur eius hic a veritatis.
+                </p>
+            </div>
+            <img class="event__image" src="./imagens/sentido-horario.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--final event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Aguardo sua presença!</h2>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
